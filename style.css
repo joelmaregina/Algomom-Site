@@ -18,6 +18,12 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--grey);
+    transition: 400ms;
+}
+
+a:hover {
+    color: var(--yellow);
 }
 
 #header {
@@ -61,6 +67,127 @@ a {
 }
 
 
-#footer {
+.banner-homepage {
+    height: 500px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,.5)100%), url(./images/homepage-banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: var(--backgroundcolor);
+}
+
+.banner-text {
+    padding: 80px;
+    font-family: var(--site-font);
+    font-weight: 100;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.sections-title {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
     background-color: var(--green);
+}
+
+.articles-homepage {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 80px 0 30px 0;
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article-img img{
+    width: 250px;
+    height: 250px;
+}
+
+.footer-green {
+    background-color: var(--green);
+}
+
+.footer-superior{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footerblock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerblock a {
+    margin: 7px;
+}
+
+.footer-inferior {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact {
+    margin: 7px;
+}
+
+.socials img {
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+
+.logo-footer img{
+    width: 200px;
+    height: 200px;
+}
+
+.footerblock .email-place {
+    margin-top: 10px;
+    background-color: var(--yellow);
+    border-radius: 12px;
+    height: 38px;
+    border: none;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerblock button{
+    background-color: var(--red);
+    font-family: var(--site-font);
+    color: var(--grey);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.footerblock form {
+    padding-bottom: 20px;
 }
