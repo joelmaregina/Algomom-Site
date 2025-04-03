@@ -22,13 +22,73 @@
             </li>
         </nav>
     </header>
-    <h1>Login</h1>
-    <main id="banner">
-        
+    <main id="banner-login">
+        <div class="banner-text-pages">
+            <h1 class="uppercase "> Login</h1>
+        </div>
     </main>
-    <section>
 
+    <section class="login">
+        <div id="caixa-login">
+            <h2 class="uppercase highlight">Login with your account: </h2>
+            <div class="login-options socials">
+                <div class="facebook login-option">
+                    <a href=""> <img src="images/facebook.png" alt=""><h4> <strong>Facebook</strong></h4></a>
+                </div>
+                <div class="google login-option">
+                    <a href=""> <img src="images/google.png" alt=""> <h4><strong>Google</strong></h4></a>
+                </div>
+            </div>
+            <hr> <strong class=""> Or </strong><hr>
+            <div id="formulario">
+                <form class="formulario-login" action="">
+                    <div class = "" >
+                        <label for="email" class=""> <h4>Email:</h4> </label>
+                        <input id="email" type="email" placeholder="youremail@email.com" required>
+                    </div>
+                    <div class = "">
+                        <label for="password" class=""> <h4>Password:</h4> </label>
+                        <input id="password" type="password"  placeholder="Type in your password" required>                
+                    </div>
+                    <div class="">
+                        <button type="submit" onclick="validateForm()"> login </button>
+                    </div>
+                </form>
+                <form class="formulario-inscricao" action="">
+                    <div>
+                        <label for="name" class=""> <h4> Name and Surname:</h4> </label>
+                        <input id="name" type="text" placeholder="Type in your name" required>
+                    </div>
+                    <div class = "" >
+                        <label for="email" class=""> <h4>Email:</h4> </label>
+                        <input id="email" type="email" placeholder="youremail@email.com" required>
+                    </div>
+                    <div class = "">
+                        <label for="password1" class=""> <h4> Type in one password:</h4> </label>
+                        <input id="password1" type="password"  placeholder="*********" required>                
+                    </div>
+                    <div class = "">
+                        <label for="password-repeat" class=""> <h4> Repeat your password:</h4> </label>
+                        <input id="password-repeat" type="password"  placeholder="*********" required>                
+                    </div>
+                    <div class="">
+                        <button type="submit" onclick="validateSubscription(), validatePassword()">Send </button>
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <div class="esqueceu-senha">
+                <a href="#"> <h5 class="d-flex justify-content-center"> Forgot your password?</h5></a>
+            </div>
+            <div class="muda-para-inscricao">
+                <h5 class="d-flex justify-content-center muda-para-inscricao"> You doesn't have one account? <button href="" class="button-login" id="subscribe"> Subscribe</button></h5> 
+            </div>
+            <div class="muda-para-login">
+                <h5 class="d-flex justify-content-center muda-para-login"> You already have one account? <button href="" class="button-login" id="return-login"> Login </button></h5>  
+            </div>
+        </div>
     </section>
+
     <footer id="footer">
         <div class="footer-green ">
             <div class="footer-superior">
