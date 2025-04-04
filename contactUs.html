@@ -16,44 +16,74 @@
                 <ul><a href="index.html" class="nav-item"> Home </a></ul>
                 <ul ><a href="aboutUs.html" class="nav-item"> About us</a></ul>
                 <ul><a href="pictures.html" class="nav-item"> Pictures</a></ul>
-                <ul ><a href="shop.html" class="nav-item">Shop</a></ul>
                 <ul ><a href="contactUs.html" class="nav-item"> Contact us</a></ul>
                 <ul ><a href="login.html" class="nav-item">Login</a></ul>
             </li>
         </nav>
     </header>
-    <h1>Contact us</h1>
-    <main id="banner">
-        
-    </main>
-    <section>
 
+    <main class="banner-contactus">
+        <div class="banner-text-pages">
+            <h1 class="uppercase "> Contact us</h1>
+        </div>
+    </main>
+    
+    <section id="contact-us-page">
+        <h2 class="uppercase highlight">Contact us now: </h2>
+        <form id="contact-us-form">
+            <label for="name" class="center"> <h4>* Name:</h4> </label>
+            <input id="name" type="text" placeholder="Type in your name" required>
+
+            <label for="email" class="center"> <h4>* Email:</h4> </label>
+            <input id="email" type="email" placeholder="youremail@email.com" required>
+
+            <label for="phone" class="center"> <h4>Phone:</h4> </label>
+            <input id="phone" type="tel" placeholder="XXXXXXXXXX">
+
+            <h4>Are you a game user? </h4>
+            <div>
+                <div class="in-row">
+                    <input type="radio" id="user" name="user" value="Yes">
+                    <label for="user" class="center"> <h4>Yes</h4> </label>
+                </div>
+                <div class="in-row">
+                    <input type="radio" id="user" name="user" value="No">
+                    <label for="user" class="center"> <h4>No</h4> </label>
+                </div>
+            </div>
+
+            <label for="message" class="center"> <h4>* Your message : </h4></label>
+            <textarea id="message" rows="20" cols="27" placeholder="Type in your message" required></textarea>
+            <h5>* Required items</h5>
+            <button type="submit" id="send-subscription">Send </button>
+        </form>
     </section>
+
     <footer id="footer">
         <div class="footer-green ">
             <div class="footer-superior">
                 <div class="footerblock ">
                     <a href="index.html" class="logo-footer"><img src="images/algomom-footer.png" alt="Game logo"></a>
                     <form action="" class="newsletter">
-                        <label for ="email"> <p class="uppercase"> Get the latest Algomom news:</p> </label>
-                        <input id="email" type="email" placeholder="youremail.@email.com" class="email-place">
+                        <label for ="email"> <p class="uppercase bold"> Get the latest Algomom news:</p> </label>
+                        <input id="email" type="email" placeholder="youremail.@email.com" class="email-place" required>
                         <button type="submit"> Enviar </button>
                     </form>
                 </div>
                 <div class="footerblock">
-                    <p class="title-footer-block uppercase">Institucional</p>
+                    <p class="title-footer-block uppercase bold">Institutional</p>
                     <a href="">About us</a>
                     <a href=""> FAQ </a>
                     <a href=""> Contact support</a>
                 </div>
                 <div class="footerblock">
-                    <p class="title-footer-block uppercase">Community</p>
+                    <p class="title-footer-block uppercase bold">Community</p>
                     <a href="">Community</a>
                     <a href="">Creator Learning Portal</a>
                     <a href="">Chat area</a>
                 </div>
                 <div class="footerblock ">
-                    <p class="title-footer-block uppercase"> Contact us </p>
+                    <p class="title-footer-block uppercase bold"> Contact us </p>
                     <div class="contact">
                         <a href=""> contact@algomom.com</a>
                     </div>
